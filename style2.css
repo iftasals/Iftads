@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(104, 42, 75, 0.811);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+    font-family: initial;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(30, 28, 28);
+    margin: 0 15px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.container {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.container h2{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+}
+
+.container p{
+    font-size: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+.container img{
+    width: 550px;
+    height: 550px;
+    border-radius: 30px;
+    margin-right: 5px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding: 0;
+}
+
+.main img{
+    margin: auto;
+}
+
+.kolom p {
+    color: #efcad7;
+    font-size: 25px;
+    max-width: 400px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: left;
+    font-family: "Merienda", cursive;
+}
+
+.kolom h2 {
+    color: #ea95b3;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: left;
+    font-family:monospace;
+    font-size: 30px;
+}
+
+.kolom span{
+    color: rgb(0, 0, 0);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #ea95b3; /* Garis lebih tebal dengan warna pink */
+}
+
+table thead {
+    background-color: #ea95b3;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(233, 187, 211, 0.5);
+}
+
+table tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+table tr:hover {
+    background-color: rgba(104, 42, 75, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    table tr {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 15px;
+    }
+
+    table th {
+        background-color: #ea95b3;
+        color: white;
+        text-align: left;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    table td {
+        text-align: right;
+        padding-left: 100%;
+        position: fixed;
+        font-size: 0.9rem;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: calc(50% - 30px);
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(104, 42, 75, 0.9);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
+    font-family: "Merienda", cursive;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(30, 28, 28);
+    margin: 0 15px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.container {
+    padding: 70px 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container h2 {
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.2rem;
+    color: #ddd;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 40px;
+}
+
+    form {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 500px; /* Atur lebar form agar tidak terlalu besar */
+        margin: 0 auto; /* Rata tengah */
+    }
+
+form label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    height: 30px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #ea95b3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #c7688b;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .container h2 {
+        font-size: 1.8rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+}
